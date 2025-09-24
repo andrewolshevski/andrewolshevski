@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Olshevski</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: #000;
+            background-color: #fafafa;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem 0;
+            font-weight: normal;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: #004C54;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom-color 0.2s ease;
+        }
+
+        a:hover {
+            border-bottom-color: #004C54;
+        }
+
+        .contact-link {
+            position: relative;
+            display: inline-block;
+        }
+
+        .contact-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #004C54;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .contact-link:hover::after {
+            width: 100%;
+        }
+
+        .contact-link:hover {
+            border-bottom-color: transparent;
+        }
+
+        .contact {
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Andrew Olshevski</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>About</h2>
+            <p>I'm an education-focused product leader with 10+ years experience building platforms and experiences that help people learn better.</p>
+            
+            <p>I've done a bit of everything, but specialize in assessment technology, LMS, student retention, and experiential learning.</p>
+            
+            <p>I started my career as an English/French instructor, and that teaching foundation still drives how I build: always starting at the end from learning outcomes, grounding it in the reality of students' lived experience, then using technology to amplify what works.</p>
+            
+            <p>I live in Brooklyn with my wife & son and never miss an Eagles game (go birds).</p>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            <p>Presently, I work as a product consultant for <a href="https://drivexlabs.com/" target="_blank"><strong>DriveX Labs</strong></a>, helping emerging edtech startups grow user retention, outcomes, and LTV.</p>
+            
+            <p>Previously, I worked on learner experience at <a href="https://emeritus.org/" target="_blank"><strong>Emeritus</strong></a> from Feb 2022 - June 2025. I reduced bootcamp dropout rates by 50% and introduced AI-powered assessments that increased learner engagement by as much as 3x while reducing average feedback time from days to seconds.</p>
+            
+            <p>In 2024, I also held a fractional leadership role as Head of Ops at <a href="https://www.bps.community/" target="_blank"><strong>Brooklyn Psychedelic Society</strong></a>, where I built out the core operational infrastructure (budgeting, reporting, financial model), optimized the event programming strategy for community growth, and secured 501(c)(3) nonprofit status.</p>
+            
+            <p>Before all of that, from 2014-2022, I cut my teeth at <a href="https://www.cricketelearning.com/" target="_blank"><strong>Fluent City</strong></a>. I started as a part-time French teacher, then earned a sequence of promotions to increasingly strategic roles. As Senior Enrollment Advisor, I sold & managed custom B2B training programs. Then, as Manager of Talent & Culture, I scaled our best-in-class experience to 4 U.S. cities + online, managing a staff of 200+ instructors. Finally, as Head of Product, I built our learning platform and helped lead the company to successful acquisition in 2021.</p>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>Email me at <a href="mailto:andrewo@hey.com" class="contact-link">andrewo@hey.com</a> and/or connect with me on <a href="https://www.linkedin.com/in/andrew-olshevski/" target="_blank" class="contact-link">LinkedIn</a></p>
+        </section>
+    </main>
+</body>
+</html>
