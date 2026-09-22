@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew Olshevski</title>
+    <meta name="description" content="Andrew Olshevski, Head of Product & Learning at Bedford.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍩</text></svg>">
     <style>
         * {
@@ -14,6 +15,7 @@
 
         body {
             font-family: 'Times New Roman', Times, serif;
+            font-size: 1.125rem;
             line-height: 1.6;
             color: #000;
             background-color: #fafafa;
@@ -28,14 +30,12 @@
             font-weight: normal;
         }
 
-        h2 {
-            font-size: 1.5rem;
-            margin: 2rem 0 1rem 0;
-            font-weight: normal;
-        }
-
         p {
             margin-bottom: 1rem;
+        }
+
+        ul {
+            margin: 0 0 1rem 1.5rem;
         }
 
         a {
@@ -49,32 +49,31 @@
             border-bottom-color: #004C54;
         }
 
-        .contact-link {
-            position: relative;
-            display: inline-block;
+        .links {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 2rem;
         }
 
-        .contact-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: #004C54;
-            transition: width 0.4s ease-in-out;
+        .links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-bottom: none;
+            border-radius: 6px;
+            transition: background-color 0.2s ease;
         }
 
-        .contact-link:hover::after {
-            width: 100%;
+        .links a:hover {
+            background-color: rgba(0, 76, 84, 0.08);
         }
 
-        .contact-link:hover {
-            border-bottom-color: transparent;
-        }
-
-        .contact {
-            margin-top: 3rem;
+        .links svg {
+            width: 26px;
+            height: 26px;
+            fill: #004C54;
         }
 
         @media (max-width: 600px) {
@@ -90,32 +89,27 @@
     </header>
 
     <main>
-        <section>
-            <h2>About</h2>
-            <p>I'm an edtech product leader with 11+ years experience building software and experiences that help people actually learn (and stick with it).</p>
-            
-            <p>I've done a bit of everything, but specialize in assessment technology, learner retention, and experiential learning.</p>
-            
-            <p>I started my career as an English/French instructor, and that teaching foundation still drives how I build: start at the end (backward design from empirical outcomes), ground decisions in learners' real daily lived experience, and use technology to simplify/amplify (and not get in the way) .</p>
-            
-            <p>I live in Brooklyn with my wife & son. My favorite type of birthday party is karaoke and I never miss an Eagles game (go birds).</p>
-        </section>
+        <p>I'm Head of Product & Learning at <a href="https://learnbedford.com" target="_blank" rel="noopener">Bedford</a>, a school that teaches working professionals to talk about their expertise in public. I build the curriculum and the technology behind it.</p>
 
-        <section>
-            <h2>Professional Experience</h2>
-            <p>I currently work as a product lead and consultant with <a href="https://drivexlabs.com/" target="_blank"><strong>DriveX Labs</strong></a>, partnering with early and growth-stage EdTech companies to improve retention, learning outcomes, and LTV.</p>
-            
-            <p>Previously, I spent three years at <a href="https://emeritus.org/" target="_blank"><strong>Emeritus</strong></a> (2022 - 2025), where I owned learner-facing product strategy across global education platforms serving tens of thousands of learners annually. During that time, I reduced bootcamp dropout rates by 50% and led the launch of AI-powered assessment systems that increased learner engagement by up to 3x while cutting feedback turnaround from days to seconds.</p>
-            
-            <p>In 2024, I also held a fractional leadership role as Head of Operations at <a href="https://www.bps.community/" target="_blank"><strong>Brooklyn Psychedelic Society</strong></a>, where I built core operational infrastructure, improved event programming strategy for community growth, and helped secure 501(c)(3) nonprofit status.</p>
-            
-            <p>Earlier in my career, I spent eight years at <a href="https://www.cricketelearning.com/" target="_blank"><strong>Fluent City</strong></a>, where I grew from part-time French instructor into Head of Product. Along the way, I led B2B training programs, built and managed a 200+ instructor network across four U.S. cities and online, and ultimately owned the development of the company’s learning platform. As part of the senior leadership team, I helped guide the business through a rapid COVID-era transition to fully online delivery and a successful acquisition in 2021.</p>
-        </section>
+        <p>I've spent over a decade in education, most of it building products that help people actually learn (and stick with it). I started as a French teacher at <a href="https://www.cricketelearning.com/" target="_blank" rel="noopener">Fluent City</a> and ended up as Head of Product, through the move to fully online delivery and the company's acquisition in 2021. Then I worked at <a href="https://emeritus.org/" target="_blank" rel="noopener">Emeritus</a> on learner-facing product (adaptive assessment, retention). In 2025, as part of <a href="https://drivexlabs.com/" target="_blank" rel="noopener">DriveX Labs</a>, I worked as a fractional product lead for early-stage ed tech startups like <a href="https://nursehub.com/" target="_blank" rel="noopener">NurseHub</a>, <a href="https://www.tytoonline.com/" target="_blank" rel="noopener">Immersed Games</a> and then <a href="https://learnbedford.com" target="_blank" rel="noopener">Bedford</a>, which evolved into my current FT role.</p>
 
-        <section class="contact">
-            <h2>Contact</h2>
-            <p>You can connect with me on <a href="https://www.linkedin.com/in/andrew-olshevski/" target="_blank" class="contact-link">LinkedIn</a>.</p>
-        </section>
+        <p>My background as a teacher still drives how I build. 3 quick principles:</p>
+        <ul>
+            <li>Practice + Feedback = Mastery</li>
+            <li>Do → Reflect &gt; Study → Do</li>
+            <li>Computers : teachers :: Humans : calculators</li>
+        </ul>
+
+        <p>I live in Brooklyn with my wife & son. My favorite type of birthday party is karaoke and I never miss an Eagles game (go birds).</p>
+
+        <nav class="links" aria-label="Profiles">
+            <a href="https://www.linkedin.com/in/andrew-olshevski/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://github.com/andrewolshevski" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+        </nav>
     </main>
 </body>
 </html>
