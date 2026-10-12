@@ -67,16 +67,74 @@
         }
 
         .links a:hover {
-            background-color: rgba(0, 76, 84, 0.08);
+            background-color: rgba(59, 127, 208, 0.1);
         }
 
         .links svg {
             width: 26px;
             height: 26px;
-            fill: #004C54;
+            fill: #3B7FD0;
+        }
+
+        .portrait {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
+            box-shadow: 0 0 0 0 rgba(0, 76, 84, 0);
+            animation: morph 14s ease-in-out infinite, breathe 7s ease-in-out infinite;
+            transition: box-shadow 0.4s ease;
+        }
+
+        .portrait img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: undissolve 1.8s ease-out backwards;
+            transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.6s ease;
+        }
+
+        .portrait:hover {
+            animation-play-state: paused;
+            box-shadow: 0 0 0 6px rgba(0, 76, 84, 0.12);
+        }
+
+        .portrait:hover img {
+            transform: scale(1.08) rotate(-2deg);
+            filter: saturate(1.2);
+        }
+
+        @keyframes morph {
+            0%, 100% { border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%; }
+            33% { border-radius: 45% 55% 40% 60% / 60% 45% 55% 40%; }
+            66% { border-radius: 52% 48% 62% 38% / 42% 55% 45% 58%; }
+        }
+
+        @keyframes breathe {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+        }
+
+        @keyframes undissolve {
+            from { opacity: 0; filter: blur(18px) saturate(0); transform: scale(1.12); }
+            to { opacity: 1; filter: blur(0) saturate(1); transform: scale(1); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .portrait, .portrait img {
+                animation: none;
+                transition: none;
+            }
         }
 
         @media (max-width: 600px) {
+            .portrait {
+                width: 160px;
+                height: 160px;
+            }
+
             h1 {
                 font-size: 2rem;
             }
@@ -85,6 +143,7 @@
 </head>
 <body>
     <header>
+        <div class="portrait"><img src="andrew.jpg" alt="Andrew Olshevski" width="200" height="200"></div>
         <h1>Andrew Olshevski</h1>
     </header>
 
