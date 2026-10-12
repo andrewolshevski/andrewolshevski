@@ -1,3 +1,3 @@
-Andrew Olshevski. Teacher turned product builder, making things that help people actually learn (and stick with it).
+Andrew Olshevski. Teacher turned product guy building education-shaped things that provide an outsized return on time & attention.
 
 More at [andrewolshevski.com](https://andrewolshevski.com).
